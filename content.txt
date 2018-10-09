@@ -1,0 +1,47 @@
+Content
+
+Quotes:
+
+"All that is gold does not glitter,
+Not all those who wander are lost;
+The old that is strong does not wither,
+Deep roots are not reached by the frost."	J.R.R. Tolkien
+
+"Fall down seven times, stand up eight."	Japanese Proverb
+
+"The past can hurt. But the way I see it, you can either run from it, or learn from it."	Walt Disney
+
+"Do or do not, there is no try"	Yoda
+
+"He who has the most hope has the most influence."	Blake Schellenberg
+
+"Never stop being YOU. I am out to be the best ME I can be. Do what you LOVE and you will be a badass."	Terry Crews
+
+
+About Bio:
+
+Hi! I'm Zane Waite. I'm a current student at Thaddeus Stevens College of Technology, and hope to be a web developer in my near future. This is my website, feel free to take a look around!
+
+Skills bar graph:
+HTML: 70%
+CSS: 50%
+Java: 10%
+bash: 40%
+Git: 30%
+
+
+Projects:
+
+waite-project
+fisherpaints-recreation
+
+
+Contact:
+
+I'm always looking for ways to learn and new projects to experiment with. If you have any projects, feel free to contact me about them here.
+
+Form: 
+Name
+Email
+Message
+Submit
