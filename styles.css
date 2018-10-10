@@ -1,0 +1,100 @@
+/*          GENERAL                                                           */
+html {
+  font-size: 24px;
+}
+
+body {
+  /*background-image: url(images/background.jpg);*/
+  background-color: #363434;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*          HEADER                                                            */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  background-color: #5c5757;
+  color: #efecec;
+  border-bottom: 2px solid #efecec;
+  display: inline-block;
+  padding: 0 0.5rem;
+  position: relative;
+  top: -10px;
+}
+
+#header-title {
+  left: -10px;
+  font-size: 1.4rem;
+}
+
+#top-left-triangle {
+  width: 0;
+  height: 0;
+  border-top: 40px solid #efecec;
+  border-right: 40px solid transparent;
+  position: absolute;
+  left: 248px;
+  top: 0px;
+}
+
+#header-title::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 39px solid #5c5757;
+  border-right: 39px solid transparent;
+  position: absolute;
+  right: -39px;
+  z-index: 1;
+}
+
+#navigation {
+  right: -10px;
+  width: 462px;
+}
+
+#navigation::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 39px solid #5c5757;
+  border-left: 39px solid transparent;
+  position: absolute;
+  left: -39px;
+  z-index: 1;
+}
+
+#top-right-triangle {
+  width: 0;
+  height: 0;
+  border-top: 40px solid #efecec;
+  border-left: 40px solid transparent;
+  position: absolute;
+  right: 484px;
+  top: 0px;
+}
+
+#navigation ul {
+  padding: 0.2rem 0 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navigation li {
+  display: inline-block;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #efecec;
+
+}
+
+/*          HOMEPAGE                                                          */
+
+#
