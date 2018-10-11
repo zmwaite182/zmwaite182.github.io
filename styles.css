@@ -1,4 +1,4 @@
-/*          GENERAL                                                           */
+/*--------------------------------GENERAL-------------------------------------*/
 html {
   font-size: 24px;
 }
@@ -17,12 +17,12 @@ header {
 
 #wrapper {
   height: 100%;
-  width: 75%;
+  width: 100%;
   background-color: #efecec;
   margin: 0 auto;
 }
 
-/*          HEADER                                                            */
+/*---------------------------------------HEADER-------------------------------*/
 
 
 .header-content {
@@ -46,7 +46,7 @@ header {
   border-top: 40px solid #efecec;
   border-right: 40px solid transparent;
   position: absolute;
-  left: 248px;
+  left: 227px;
   top: 0px;
 }
 
@@ -104,7 +104,7 @@ header {
 
 }
 
-/*          HOMEPAGE                                                          */
+/*------------------------------------HOMEPAGE--------------------------------*/
 
 #home {
   width: 100%;
@@ -121,6 +121,85 @@ header {
   position: relative;
 }
 
+
+
+/*---------------------------------------ABOUT--------------------------------*/
+
+#about {
+  padding: 1rem 10rem;
+  height: 200vh;
+}
+
+#about p, h1 {
+  text-align: center;
+}
+
+#about img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 1.7rem;
+}
+
+#about h1 {
+  font-size: 3rem;
+}
+
+table {
+  background-color: #efecec;
+  margin: 0 auto;
+  width: 75%;
+  border-spacing: 0.1rem 0.6rem;
+}
+
+td, th {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+th {
+  width: 25%;
+  background-color: #5c5757;
+  color: #efecec;
+}
+
+td {
+  text-align: right;
+  background-color: #E1E0E0;
+  padding-right: 10px;
+  font-size: 0.8rem;
+}
+
+td::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+}
+
+td#html-percent::before {
+  width: 70%;
+}
+
+td#css-percent::before {
+  width: 50%;
+}
+
+td#java-percent::before {
+  width: 10%;
+}
+
+td#bash-percent::before {
+  width: 30%;
+}
+
+td#git-percent::before {
+  width: 30%;
+}
+
+/*----------------------------------------CHEVRONS----------------------------*/
+
 .chevron {
       position: relative;
       text-align: center;
@@ -130,7 +209,7 @@ header {
       width: 200px;
       margin: 0 auto;
       bottom: -20vh;
-    }
+}
 
 .chevron:before {
       content: '';
@@ -141,7 +220,7 @@ header {
       width: 50%;
       background: #efecec;
       transform: skew(0deg, 20deg);
-    }
+}
 
 .chevron:after {
       content: '';
@@ -152,4 +231,37 @@ header {
       width: 50%;
       background: #efecec;
       transform: skew(0deg, -20deg);
-    }
+}
+
+.chevron-2 {
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 0px;
+      width: 200px;
+      margin: 0 auto;
+      bottom: -20vh;
+}
+
+.chevron-2:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, 20deg);
+}
+
+.chevron-2:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, -20deg);
+}
