@@ -1,0 +1,322 @@
+/*--------------------------------GENERAL-------------------------------------*/
+html {
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #363434;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrapper {
+  height: 110vh;
+  width: 100%;
+  background-color: #efecec;
+  margin: 0 auto;
+}
+
+#wrapper-2 {
+  height: 150vh;
+  width: 100%;
+  background-color: #363434;
+  margin: 0 auto;
+}
+
+/*----------------------------------------CHEVRONS----------------------------*/
+
+.chevron {
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 0px;
+      width: 200px;
+      margin: 0 auto;
+      bottom: -20vh;
+}
+
+.chevron:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background: #efecec;
+      transform: skew(0deg, 20deg);
+}
+
+.chevron:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background: #efecec;
+      transform: skew(0deg, -20deg);
+}
+
+.chevron-2 {
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 0px;
+      width: 200px;
+      margin: 0 auto;
+      bottom: -15vh;
+}
+
+.chevron-2:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, 20deg);
+}
+
+.chevron-2:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, -20deg);
+}
+
+/*---------------------------------------HEADER-------------------------------*/
+
+
+.header-content {
+  background-color: #5c5757;
+  color: #efecec;
+  border-bottom: 2px solid #efecec;
+  display: inline-block;
+  padding: 0 0.5rem;
+  position: relative;
+  top: -10px;
+}
+
+#header-title {
+  left: -10px;
+  font-size: 1.4rem;
+}
+
+#top-left-triangle-header {
+  width: 0;
+  height: 0;
+  border-top: 40px solid #efecec;
+  border-right: 40px solid transparent;
+  position: absolute;
+  left: 227px;
+  top: 0px;
+}
+
+#header-title::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 39px solid #5c5757;
+  border-right: 39px solid transparent;
+  position: absolute;
+  right: -39px;
+  z-index: 1;
+}
+
+#navigation {
+  right: -10px;
+  width: 462px;
+}
+
+#navigation::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 39px solid #5c5757;
+  border-left: 39px solid transparent;
+  position: absolute;
+  left: -39px;
+  z-index: 1;
+}
+
+#top-right-triangle-header {
+  width: 0;
+  height: 0;
+  border-top: 40px solid #efecec;
+  border-left: 40px solid transparent;
+  position: absolute;
+  right: 484px;
+  top: 0px;
+}
+
+#navigation ul {
+  padding: 0.2rem 0 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navigation li {
+  display: inline-block;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #efecec;
+
+}
+
+/*------------------------------------HOMEPAGE--------------------------------*/
+
+#home {
+  width: 100%;
+  height: 100vh;
+  color: #efecec;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  position: relative;
+}
+
+
+
+/*---------------------------------------ABOUT--------------------------------*/
+
+#about {
+  padding: 1rem 10rem;
+  height: 110vh;
+}
+
+#about p, h1 {
+  text-align: center;
+}
+
+#about img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 1.7rem;
+  height: 10rem;
+}
+
+#about h1 {
+  font-size: 3rem;
+  margin: 20px auto 30px;
+}
+
+table {
+  background-color: #efecec;
+  margin: 0 auto;
+  width: 75%;
+  border-spacing: 0.1rem 0.6rem;
+}
+
+td, th {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+th {
+  width: 25%;
+  background-color: #5c5757;
+  color: #efecec;
+}
+
+td {
+  text-align: right;
+  background-color: #E1E0E0;
+  padding-right: 10px;
+  font-size: 0.8rem;
+}
+
+td::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+}
+
+td#html-percent::before {
+  width: 70%;
+}
+
+td#css-percent::before {
+  width: 50%;
+}
+
+td#java-percent::before {
+  width: 10%;
+}
+
+td#bash-percent::before {
+  width: 30%;
+}
+
+td#git-percent::before {
+  width: 30%;
+}
+
+/*---------------------------------------PROJECTS-----------------------------*/
+
+#projects {
+  height: 150vh;
+}
+
+#projects h1 {
+  font-size: 3rem;
+}
+
+.projects {
+  width: 75%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(https://via.placeholder.com/1248x500);
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.projects + .projects {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+.projects h2 {
+  background-color: #5c5757;
+  color: #efecec;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid black;
+  height: 2rem;
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+.projects a {
+  align-self: flex-end;
+  background-color: #5c5757;
+  text-decoration: none;
+  color: #efecec;
+  margin: 0 1rem 1rem 0;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid black;
+}
