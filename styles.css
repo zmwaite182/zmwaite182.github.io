@@ -1,13 +1,11 @@
 /*--------------------------------GENERAL-------------------------------------*/
 html {
   font-size: 24px;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
-  background-image: url(images/background.jpg);
-  background-position: center;
-  background-size: cover;
-  font-family: 'Raleway', sans-serif;
+  background-color: #363434;
 }
 
 header {
@@ -16,10 +14,85 @@ header {
 }
 
 #wrapper {
-  height: 100%;
+  height: 110vh;
   width: 100%;
   background-color: #efecec;
   margin: 0 auto;
+}
+
+#wrapper-2 {
+  height: 150vh;
+  width: 100%;
+  background-color: #363434;
+  margin: 0 auto;
+}
+
+/*----------------------------------------CHEVRONS----------------------------*/
+
+.chevron {
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 0px;
+      width: 200px;
+      margin: 0 auto;
+      bottom: -20vh;
+}
+
+.chevron:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background: #efecec;
+      transform: skew(0deg, 20deg);
+}
+
+.chevron:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background: #efecec;
+      transform: skew(0deg, -20deg);
+}
+
+.chevron-2 {
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 0px;
+      width: 200px;
+      margin: 0 auto;
+      bottom: -15vh;
+}
+
+.chevron-2:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, 20deg);
+}
+
+.chevron-2:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, -20deg);
 }
 
 /*---------------------------------------HEADER-------------------------------*/
@@ -40,7 +113,7 @@ header {
   font-size: 1.4rem;
 }
 
-#top-left-triangle {
+#top-left-triangle-header {
   width: 0;
   height: 0;
   border-top: 40px solid #efecec;
@@ -77,7 +150,7 @@ header {
   z-index: 1;
 }
 
-#top-right-triangle {
+#top-right-triangle-header {
   width: 0;
   height: 0;
   border-top: 40px solid #efecec;
@@ -127,7 +200,7 @@ header {
 
 #about {
   padding: 1rem 10rem;
-  height: 200vh;
+  height: 110vh;
 }
 
 #about p, h1 {
@@ -139,10 +212,12 @@ header {
   display: block;
   border-radius: 50%;
   margin-bottom: 1.7rem;
+  height: 10rem;
 }
 
 #about h1 {
   font-size: 3rem;
+  margin: 20px auto 30px;
 }
 
 table {
@@ -165,7 +240,7 @@ th {
 
 td {
   text-align: right;
-  background-color: #E1E0E0;
+  background-color: #e1e0e0;
   padding-right: 10px;
   font-size: 0.8rem;
 }
@@ -198,70 +273,49 @@ td#git-percent::before {
   width: 30%;
 }
 
-/*----------------------------------------CHEVRONS----------------------------*/
+/*---------------------------------------PROJECTS-----------------------------*/
 
-.chevron {
-      position: relative;
-      text-align: center;
-      padding: 12px;
-      margin-bottom: 6px;
-      height: 0px;
-      width: 200px;
-      margin: 0 auto;
-      bottom: -20vh;
+#projects {
+  height: 150vh;
 }
 
-.chevron:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 50%;
-      width: 50%;
-      background: #efecec;
-      transform: skew(0deg, 20deg);
+#projects h1 {
+  font-size: 3rem;
+  color: #efecec;
 }
 
-.chevron:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50%;
-      width: 50%;
-      background: #efecec;
-      transform: skew(0deg, -20deg);
+.projects {
+  width: 75%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(https://via.placeholder.com/1248x500);
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
 }
 
-.chevron-2 {
-      position: relative;
-      text-align: center;
-      padding: 12px;
-      margin-bottom: 6px;
-      height: 0px;
-      width: 200px;
-      margin: 0 auto;
-      bottom: -20vh;
+.projects + .projects {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
 }
 
-.chevron-2:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 50%;
-      width: 50%;
-      background: #5c5757;
-      transform: skew(0deg, 20deg);
+.projects h2 {
+  background-color: #5c5757;
+  color: #efecec;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid black;
+  height: 2rem;
+  margin: 0.5rem 0 0 0.5rem;
 }
 
-.chevron-2:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50%;
-      width: 50%;
-      background: #5c5757;
-      transform: skew(0deg, -20deg);
+.projects a {
+  align-self: flex-end;
+  background-color: #5c5757;
+  text-decoration: none;
+  color: #efecec;
+  margin: 0 1rem 1rem 0;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid black;
 }
