@@ -1,0 +1,267 @@
+/*--------------------------------GENERAL-------------------------------------*/
+html {
+  font-size: 24px;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #efecec;
+  margin: 0 auto;
+}
+
+/*---------------------------------------HEADER-------------------------------*/
+
+
+.header-content {
+  background-color: #5c5757;
+  color: #efecec;
+  border-bottom: 2px solid #efecec;
+  display: inline-block;
+  padding: 0 0.5rem;
+  position: relative;
+  top: -10px;
+}
+
+#header-title {
+  left: -10px;
+  font-size: 1.4rem;
+}
+
+#top-left-triangle {
+  width: 0;
+  height: 0;
+  border-top: 40px solid #efecec;
+  border-right: 40px solid transparent;
+  position: absolute;
+  left: 227px;
+  top: 0px;
+}
+
+#header-title::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 39px solid #5c5757;
+  border-right: 39px solid transparent;
+  position: absolute;
+  right: -39px;
+  z-index: 1;
+}
+
+#navigation {
+  right: -10px;
+  width: 462px;
+}
+
+#navigation::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 39px solid #5c5757;
+  border-left: 39px solid transparent;
+  position: absolute;
+  left: -39px;
+  z-index: 1;
+}
+
+#top-right-triangle {
+  width: 0;
+  height: 0;
+  border-top: 40px solid #efecec;
+  border-left: 40px solid transparent;
+  position: absolute;
+  right: 484px;
+  top: 0px;
+}
+
+#navigation ul {
+  padding: 0.2rem 0 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navigation li {
+  display: inline-block;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #efecec;
+
+}
+
+/*------------------------------------HOMEPAGE--------------------------------*/
+
+#home {
+  width: 100%;
+  height: 100vh;
+  color: #efecec;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  position: relative;
+}
+
+
+
+/*---------------------------------------ABOUT--------------------------------*/
+
+#about {
+  padding: 1rem 10rem;
+  height: 200vh;
+}
+
+#about p, h1 {
+  text-align: center;
+}
+
+#about img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 1.7rem;
+}
+
+#about h1 {
+  font-size: 3rem;
+}
+
+table {
+  background-color: #efecec;
+  margin: 0 auto;
+  width: 75%;
+  border-spacing: 0.1rem 0.6rem;
+}
+
+td, th {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+th {
+  width: 25%;
+  background-color: #5c5757;
+  color: #efecec;
+}
+
+td {
+  text-align: right;
+  background-color: #E1E0E0;
+  padding-right: 10px;
+  font-size: 0.8rem;
+}
+
+td::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+}
+
+td#html-percent::before {
+  width: 70%;
+}
+
+td#css-percent::before {
+  width: 50%;
+}
+
+td#java-percent::before {
+  width: 10%;
+}
+
+td#bash-percent::before {
+  width: 30%;
+}
+
+td#git-percent::before {
+  width: 30%;
+}
+
+/*----------------------------------------CHEVRONS----------------------------*/
+
+.chevron {
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 0px;
+      width: 200px;
+      margin: 0 auto;
+      bottom: -20vh;
+}
+
+.chevron:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background: #efecec;
+      transform: skew(0deg, 20deg);
+}
+
+.chevron:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background: #efecec;
+      transform: skew(0deg, -20deg);
+}
+
+.chevron-2 {
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 0px;
+      width: 200px;
+      margin: 0 auto;
+      bottom: -20vh;
+}
+
+.chevron-2:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, 20deg);
+}
+
+.chevron-2:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background: #5c5757;
+      transform: skew(0deg, -20deg);
+}
