@@ -27,6 +27,13 @@ header {
   margin: 0 auto;
 }
 
+#wrapper-3 {
+  height: 90vh;
+  width: 100%;
+  background-color: #efecec;
+  margin: 0 auto;
+}
+
 /*----------------------------------------CHEVRONS----------------------------*/
 
 .chevron {
@@ -284,7 +291,7 @@ td#git-percent::before {
   color: #efecec;
 }
 
-.projects {
+.project-sample {
   width: 75%;
   height: 500px;
   margin: 0 auto;
@@ -294,12 +301,12 @@ td#git-percent::before {
   border: 1px solid black;
 }
 
-.projects + .projects {
+.project-sample + .project-sample {
   margin-top: 2rem;
   margin-bottom: -2rem;
 }
 
-.projects h2 {
+.project-sample h2 {
   background-color: #5c5757;
   color: #efecec;
   font-size: 1.5rem;
@@ -309,7 +316,7 @@ td#git-percent::before {
   margin: 0.5rem 0 0 0.5rem;
 }
 
-.projects a {
+.project-sample a {
   align-self: flex-end;
   background-color: #5c5757;
   text-decoration: none;
@@ -318,4 +325,53 @@ td#git-percent::before {
   font-size: 1.5rem;
   padding: 0.1rem 0.5rem;
   border: 2px solid black;
+}
+
+/*---------------------------------------CONTACT------------------------------*/
+
+#contact {
+  height: 90vh;
+  padding: 1rem 10rem;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 3rem;
+}
+
+form {
+  margin: 3rem auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 15rem;
+  background-color: #5c5757;
+  padding: 0.3rem 2rem;
+  border-radius: 10px;
+}
+
+input, textarea {
+  margin: 0.5rem 0 0;
+  background-color: #efecec;
+  padding-left: 0.7rem;
+  font-size: 0.7rem;
+}
+
+input {
+  height: 1.3rem;
+}
+
+textarea {
+  height: 6rem;
+  padding-top: 0.5rem;
+}
+
+input[type="submit"] {
+  width: 40%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  height: auto;
 }
