@@ -331,10 +331,18 @@ td#git-percent::before {
   width: 75%;
   height: 500px;
   margin: 0 auto;
-  background-image: url(https://via.placeholder.com/1248x500);
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
+}
+
+.project-sample:nth-of-type(1) {
+  background-image: url(images/nanas-closet.png);
+}
+
+.project-sample:nth-of-type(2) {
+  background-image: url(images/fisher-paints.png);
 }
 
 .project-sample + .project-sample {
