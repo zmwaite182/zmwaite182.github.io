@@ -336,10 +336,40 @@ td#git-percent::before {
   background-color: #5c5757;
   color: #efecec;
   font-size: 1.5rem;
-  padding: 0.1rem 0.5rem;
-  border: 2px solid black;
+  padding: 0.1rem 0 0.1rem 0.5rem;
+  border-bottom: 2px solid black;
   height: 2rem;
-  margin: 0.5rem 0 0 0.5rem;
+  margin: 0;
+}
+
+.project-sample h2::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 52px solid #5c5757;
+  border-right: 52px solid transparent;
+  position: relative;
+  top: 50px;
+  right: -52px;
+  z-index: 1;
+}
+
+#top-left-triangle-article-1 {
+  width: 0;
+  height: 0;
+  border-top: 54px solid black;
+  border-right: 54px solid transparent;
+  position: relative;
+  left: -383px;
+}
+
+#top-left-triangle-article-2 {
+  width: 0;
+  height: 0;
+  border-top: 54px solid black;
+  border-right: 54px solid transparent;
+  position: relative;
+  left: -303px;
 }
 
 .project-sample a {
