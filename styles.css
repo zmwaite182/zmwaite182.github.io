@@ -388,21 +388,21 @@ input[type="submit"] {
 }
 
 footer img {
-  width: 48px;
+  width: 58px;
 }
 
 #anchor-container a {
   background-color: #efecec;
   padding: 0.3rem;
   border-radius: 10px;
-  height: 48px;
+  height: 58px;
 }
 
 footer p {
   text-align: center;
   color: #efecec;
   font-size: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 footer div:nth-last-child(1) {
