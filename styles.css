@@ -11,24 +11,25 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 
 #wrapper {
-  height: 110vh;
+  height: 105vh;
   width: 100%;
   background-color: #efecec;
   margin: 0 auto;
 }
 
 #wrapper-2 {
-  height: 157vh;
+  height: 150vh;
   width: 100%;
   background-color: #363434;
   margin: 0 auto;
 }
 
 #wrapper-3 {
-  height: 80vh;
+  height: 88vh;
   width: 100%;
   background-color: #efecec;
   margin: 0 auto;
@@ -37,73 +38,114 @@ header {
 /*----------------------------------------CHEVRONS----------------------------*/
 
 .chevron {
-      position: relative;
-      text-align: center;
-      padding: 12px;
-      margin-bottom: 6px;
-      height: 0px;
-      width: 200px;
-      margin: 0 auto;
-      bottom: -20vh;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -20vh;
 }
 
 .chevron:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 50%;
-      width: 50%;
-      background: #efecec;
-      transform: skew(0deg, 20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, 20deg);
 }
 
 .chevron:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50%;
-      width: 50%;
-      background: #efecec;
-      transform: skew(0deg, -20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, -20deg);
 }
 
 .chevron-2 {
-      position: relative;
-      text-align: center;
-      padding: 12px;
-      margin-bottom: 6px;
-      height: 0px;
-      width: 200px;
-      margin: 0 auto;
-      bottom: -15vh;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -10vh;
 }
 
 .chevron-2:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 50%;
-      width: 50%;
-      background: #5c5757;
-      transform: skew(0deg, 20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
 }
 
 .chevron-2:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50%;
-      width: 50%;
-      background: #5c5757;
-      transform: skew(0deg, -20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-3 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -12vh;
+}
+
+.chevron-3:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-3:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
 }
 
 /*---------------------------------------HEADER-------------------------------*/
 
+
+header a {
+  text-decoration: none;
+  color: #efecec;
+}
 
 .header-content {
   background-color: #5c5757;
@@ -126,8 +168,8 @@ header {
   border-top: 40px solid #efecec;
   border-right: 40px solid transparent;
   position: absolute;
-  left: 227px;
-  top: 0px;
+  left: 219px;
+  top: -8px;
 }
 
 #header-title::after {
@@ -142,8 +184,9 @@ header {
 }
 
 #navigation {
-  right: -10px;
-  width: 462px;
+  right: -59.3vw;
+  width: 446px;
+  padding: 0;
 }
 
 #navigation::before {
@@ -163,25 +206,17 @@ header {
   border-top: 40px solid #efecec;
   border-left: 40px solid transparent;
   position: absolute;
-  right: 484px;
-  top: 0px;
-}
-
-#navigation ul {
-  padding: 0.2rem 0 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-#navigation li {
-  display: inline-block;
+  right: -551px;
+  top: -8px;
 }
 
 #navigation a {
-  text-decoration: none;
-  color: #efecec;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+}
 
+#navigation a:hover {
+  background-color: #363434;
 }
 
 /*------------------------------------HOMEPAGE--------------------------------*/
@@ -199,6 +234,7 @@ header {
 #home h1 {
   font-size: 3rem;
   position: relative;
+  z-index: -1;
 }
 
 
@@ -207,7 +243,7 @@ header {
 
 #about {
   padding: 1rem 10rem;
-  height: 110vh;
+  height: 105vh;
 }
 
 #about p, h1 {
@@ -283,7 +319,7 @@ td#git-percent::before {
 /*---------------------------------------PROJECTS-----------------------------*/
 
 #projects {
-  height: 157vh;
+  height: 150vh;
 }
 
 #projects h1 {
@@ -330,7 +366,7 @@ td#git-percent::before {
 /*---------------------------------------CONTACT------------------------------*/
 
 #contact {
-  height: 80vh;
+  height: 88vh;
   padding: 1rem 10rem;
   text-align: center;
 }
@@ -346,7 +382,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 75%;
-  height: 15rem;
+  height: 13rem;
   background-color: #5c5757;
   padding: 0.3rem 2rem;
   border-radius: 10px;
@@ -370,7 +406,7 @@ textarea {
 
 input[type="submit"] {
   width: 40%;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   padding: 0.5rem;
   border-radius: 10px;
   font-size: 1rem;
