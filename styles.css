@@ -37,69 +37,71 @@ header {
 /*----------------------------------------CHEVRONS----------------------------*/
 
 .chevron {
-      position: relative;
-      text-align: center;
-      padding: 12px;
-      margin-bottom: 6px;
-      height: 0px;
-      width: 200px;
-      margin: 0 auto;
-      bottom: -20vh;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -20vh;
 }
 
 .chevron:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 50%;
-      width: 50%;
-      background: #efecec;
-      transform: skew(0deg, 20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, 20deg);
 }
 
 .chevron:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50%;
-      width: 50%;
-      background: #efecec;
-      transform: skew(0deg, -20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, -20deg);
 }
 
 .chevron-2 {
-      position: relative;
-      text-align: center;
-      padding: 12px;
-      margin-bottom: 6px;
-      height: 0px;
-      width: 200px;
-      margin: 0 auto;
-      bottom: -15vh;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -15vh;
 }
 
 .chevron-2:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 50%;
-      width: 50%;
-      background: #5c5757;
-      transform: skew(0deg, 20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
 }
 
 .chevron-2:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50%;
-      width: 50%;
-      background: #5c5757;
-      transform: skew(0deg, -20deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
 }
 
 /*---------------------------------------HEADER-------------------------------*/
