@@ -142,6 +142,11 @@ header {
 /*---------------------------------------HEADER-------------------------------*/
 
 
+header a {
+  text-decoration: none;
+  color: #efecec;
+}
+
 .header-content {
   background-color: #5c5757;
   color: #efecec;
@@ -179,8 +184,9 @@ header {
 }
 
 #navigation {
-  right: -57vw;
-  width: 462px;
+  right: -59.3vw;
+  width: 446px;
+  padding: 0;
 }
 
 #navigation::before {
@@ -200,25 +206,17 @@ header {
   border-top: 40px solid #efecec;
   border-left: 40px solid transparent;
   position: absolute;
-  right: -472px;
+  right: -551px;
   top: -8px;
 }
 
-#navigation ul {
-  padding: 0.2rem 0 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-#navigation li {
-  display: inline-block;
-}
-
 #navigation a {
-  text-decoration: none;
-  color: #efecec;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+}
 
+#navigation a:hover {
+  background-color: #363434;
 }
 
 /*------------------------------------HOMEPAGE--------------------------------*/
