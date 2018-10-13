@@ -14,27 +14,6 @@ header {
   position: fixed;
 }
 
-#wrapper {
-  height: 105vh;
-  width: 100%;
-  background-color: #efecec;
-  margin: 0 auto;
-}
-
-#wrapper-2 {
-  height: 150vh;
-  width: 100%;
-  background-color: #363434;
-  margin: 0 auto;
-}
-
-#wrapper-3 {
-  height: 88vh;
-  width: 100%;
-  background-color: #efecec;
-  margin: 0 auto;
-}
-
 /*----------------------------------------CHEVRONS----------------------------*/
 
 .chevron {
@@ -244,6 +223,7 @@ header a {
 #about {
   padding: 1rem 10rem;
   height: 105vh;
+  background-color: #efecec;
 }
 
 #about p, h1 {
@@ -319,7 +299,9 @@ td#git-percent::before {
 /*---------------------------------------PROJECTS-----------------------------*/
 
 #projects {
-  height: 150vh;
+  height: 160vh;
+  width: 100%;
+  background-color: #363434;
 }
 
 #projects h1 {
@@ -377,6 +359,7 @@ td#git-percent::before {
   height: 88vh;
   padding: 1rem 10rem;
   text-align: center;
+  background-color: #efecec;
 }
 
 #contact h1 {
