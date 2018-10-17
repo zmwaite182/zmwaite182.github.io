@@ -28,11 +28,7 @@ header {
   margin: 0 auto;
   bottom: -20vh;
   opacity: 0;
-  animation-name: home-fade-in;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  animation: fade-in 1.5s 2s ease-in forwards;
 }
 
 .chevron:before {
@@ -127,7 +123,7 @@ header {
 
 /*---------------------------------ANIMATIONS---------------------------------*/
 
-@keyframes home-fade-in {
+@keyframes fade-in {
   from {opacity: 0;}
   to {opacity: 1;}
 }
@@ -236,11 +232,7 @@ header a {
 
 #home h1, h2 {
   opacity: 0;
-  animation-name: home-fade-in;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  animation: fade-in 2s 1s ease-in forwards;
 }
 
 /*---------------------------------------ABOUT--------------------------------*/
