@@ -27,6 +27,8 @@ header {
   width: 200px;
   margin: 0 auto;
   bottom: -20vh;
+  opacity: 0;
+  animation: fade-in 1.5s 2s ease-in forwards;
 }
 
 .chevron:before {
@@ -119,6 +121,18 @@ header {
   transform: skew(0deg, 20deg);
 }
 
+/*---------------------------------ANIMATIONS---------------------------------*/
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes header-drop-down {
+  from {top: -50px;}
+  to {top: -10px;}
+}
+
 /*---------------------------------------HEADER-------------------------------*/
 header a {
   text-decoration: none;
@@ -132,11 +146,11 @@ header a {
   display: inline-block;
   padding: 0 0.5rem;
   position: relative;
-  top: -10px;
+  top: -50px;
+  animation: header-drop-down 2s ease 3s forwards;
 }
 
 #header-title {
-  left: -10px;
   font-size: 1.4rem;
 }
 
@@ -214,6 +228,11 @@ header a {
   font-size: 3rem;
   position: relative;
   z-index: -1;
+}
+
+#home h1, h2 {
+  opacity: 0;
+  animation: fade-in 2s 1s ease-in forwards;
 }
 
 /*---------------------------------------ABOUT--------------------------------*/
