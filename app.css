@@ -1,0 +1,248 @@
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+
+body {
+  background-color: #363434;
+  margin: 8px 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #efecec;
+}
+#home h1 {
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-content {
+  background-color: #5c5757;
+  color: #efecec;
+  border-bottom: 2px solid #efecec;
+  display: inline-block;
+  padding: 0 0.5rem;
+  position: relative;
+  top: -8px;
+}
+header a {
+  color: #efecec;
+  text-decoration: none;
+}
+header #header-title {
+  font-size: 1.4rem;
+  border-right: 2px solid #efecec;
+}
+header #navigation {
+  width: 446px;
+  padding: 0;
+  border-left: 2px solid #efecec;
+}
+header #navigation a {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+}
+
+#about {
+  padding: 1rem 10rem;
+  height: 105vh;
+  background-color: #efecec;
+  /*CHEVRONS*/
+}
+#about img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 1.7rem;
+  height: 10rem;
+}
+#about p {
+  text-align: center;
+}
+#about h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px auto 30px;
+}
+#about table {
+  background-color: #efecec;
+  margin: 0 auto;
+  width: 75%;
+  border-spacing: 0.1rem 0.6rem;
+}
+#about table th {
+  width: 25%;
+  background-color: #5c5757;
+  color: #efecec;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+#about table td {
+  text-align: right;
+  background-color: #d8d0d0;
+  padding-right: 10px;
+  font-size: 0.8rem;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+#about table #html-percent::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+  width: 70%;
+}
+#about table #css-percent::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+  width: 50%;
+}
+#about table #java-percent::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+  width: 10%;
+}
+#about table #bash-percent::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+  width: 30%;
+}
+#about table #git-percent::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+  width: 30%;
+}
+
+chevron {
+  opacity: 0;
+  animation: fade-in 1.5s 2s ease-in forwards;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -20vh;
+}
+
+chevron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, 20deg);
+}
+
+chevron::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, -20deg);
+}
+
+chevron-2 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -10vh;
+}
+
+chevron-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
+}
+
+chevron-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
+
+chevron-3 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -12vh;
+}
+
+chevron-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
+}
+
+chevron-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
+
+/*# sourceMappingURL=app.css.map */
