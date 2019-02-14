@@ -1,0 +1,280 @@
+//VARIABLES
+$darkgray: #363434
+$gray: #5c5757
+$offwhite: #efecec
+
+$font-stack: 'Raleway', sans-serif
+$font-size: 24px
+
+
+
+
+//MIXINS
+=chevron($location)
+  display: block
+  position: relative
+  text-align: center
+  padding: 12px
+  margin-bottom: 6px
+  height: 0px
+  width: 200px
+  margin: 0 auto
+  bottom: $location
+=chevron-before($color)
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  height: 50%
+  width: 50%
+  background: $color
+  transform: skew(0deg, 20deg)
+=chevron-after($color)
+  content: ''
+  position: absolute
+  top: 0
+  right: 0
+  height: 50%
+  width: 50%
+  background: $color
+  transform: skew(0deg, -20deg)
+
+=skill-percentage($width)
+  height: 30px
+  background-color: $darkgray
+  float: left
+  content: ""
+  padding: 0
+  width: $width
+
+
+//STYLES
+
+html
+  font-family: $font-stack
+  font-size: $font-size
+
+body
+  background-color: $darkgray
+  margin: 8px 0px
+
+header
+  display: flex
+  justify-content: space-between
+  position: fixed
+  width: 100%
+
+#home
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  color: $offwhite
+  h1
+    font-size: 3rem
+
+header
+  display: flex
+  justify-content: space-between
+  .header-content
+    background-color: $gray
+    color: $offwhite
+    border-bottom: 2px solid $offwhite
+    display: inline-block
+    padding: 0 0.5rem
+    position: relative
+    top: -8px
+  a
+    color: $offwhite
+    text-decoration: none
+  #header-title
+    font-size: 1.4rem
+    border-right: 2px solid $offwhite
+  #navigation
+    width: 446px
+    padding: 0
+    border-left: 2px solid $offwhite
+    a
+      display: inline-block
+      padding: 0.2rem 0.6rem
+      transition: 1s
+      &:hover
+        background-color: $darkgray
+        transition: 1s
+
+#about
+  padding: 1rem 10rem
+  height: 105vh
+  background-color: $offwhite
+  img
+    margin: 0 auto
+    display: block
+    border-radius: 50%
+    margin-bottom: 1.7rem
+    height: 10rem
+  p
+    text-align: center
+  h1
+    text-align: center
+    font-size: 3rem
+    margin: 20px auto 30px
+table
+  background-color: $offwhite
+  margin: 0 auto
+  width: 75%
+  border-spacing: 0.1rem 0.6rem
+  th
+    width: 25%
+    background-color: $gray
+    color: $offwhite
+    border: 1px solid black
+    margin-bottom: 2rem
+  td
+    text-align: right
+    background-color: darken($offwhite, 10%)
+    padding-right: 10px
+    font-size: 0.8rem
+    border: 1px solid black
+    margin-bottom: 2rem
+  #html-percent::before
+    +skill-percentage(70%)
+  #css-percent::before
+    +skill-percentage(50%)
+  #java-percent::before
+    +skill-percentage(10%)
+  #bash-percent::before
+    +skill-percentage(30%)
+  #git-percent::before
+    +skill-percentage(30%)
+
+#projects
+  height: 160vh
+  width: 100%
+  background-color: $darkgray
+  text-align: center
+  h1
+    font-size: 3rem
+    color: $offwhite
+.project-sample
+  width: 75%
+  height: 500px
+  margin: 0 auto
+  background-size: cover
+  display: flex
+  justify-content: space-between
+  border: 2px solid black
+  & + &
+    margin-top: 2rem
+    margin-bottom: -2rem
+  h2
+    background-color: $gray
+    color: $offwhite
+    font-size: 1.5rem
+    padding: 0.1rem 0.5rem
+    border-bottom: 2px solid black
+    border-right: 2px solid black
+    height: 2rem
+    margin: 0
+  a
+    align-self: flex-end
+    background-color: $gray
+    text-decoration: none
+    color: $offwhite
+    margin: 0 1rem 1rem 0
+    font-size: 1.5rem
+    padding: 0.1rem 0.5rem
+    border: 2px solid black
+    transition: 1s
+    &:hover
+      background-color: $darkgray
+      transition: 1s
+
+#contact
+  height: 88vh
+  padding: 1rem 10rem
+  text-align: center
+  background-color: $offwhite
+  h1
+    font-size: 3rem
+    margin-top: 1rem
+form
+  margin: 2rem auto 0
+  text-align: center
+  display: flex
+  flex-direction: column
+  width: 75%
+  height: 13rem
+  background-color: $gray
+  padding: 1rem 2rem 0.3rem
+  border-radius: 10px
+input
+  margin: 0.5rem 0 0
+  background-color: $offwhite
+  padding: 0.2rem 0 0.2rem 0.7rem
+  font-size: 0.7rem
+  height: 1.3rem
+  [type="submit"]
+    width: 40%
+    margin: 0.5rem auto
+    padding: 0.5rem
+    border-radius: 10px
+    font-size: 1rem
+    height: auto
+textarea
+  margin: 0.5rem 0 0
+  background-color: $offwhite
+  padding: 0.2rem 0 0.2rem 0.7rem
+  font-size: 0.7rem
+  height: 6rem
+  padding-top: 0.5rem
+
+#anchor-container
+  display: flex
+  justify-content: space-between
+  width: 25%
+  margin: 0 auto
+  padding-top: 1rem
+  a
+    background-color: $offwhite
+    padding: 0.3rem
+    border-radius: 10px
+    height: 58px
+footer
+  p
+    text-align: center
+    color: $offwhite
+    font-size: 0.5rem
+    margin-top: 1.5rem
+  img
+    width: 58px
+  div:nth-last-child(1)
+    font-size: 0.3rem
+    color: $offwhite
+    text-align: center
+    margin-bottom: 1rem
+    a
+      color: $offwhite
+
+  /*CHEVRONS*/
+
+/*.chevron
+  opacity: 0
+  animation: fade-in 1.5s 2s ease-in forwards
+  +chevron(-20vh)
+  &:before
+    +chevron-before($offwhite)
+  &:after
+    +chevron-after($offwhite)
+/*.chevron-2
+  +chevron(-10vh)
+  &:before
+    +chevron-before($gray)
+  &:after
+    +chevron-after($gray)
+/*.chevron-3
+  +chevron(-12vh)
+  &:before
+    +chevron-before($gray)
+  &:after
+    +chevron-after($gray)
