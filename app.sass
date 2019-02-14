@@ -97,6 +97,10 @@ header
     a
       display: inline-block
       padding: 0.2rem 0.6rem
+      transition: 1s
+      &:hover
+        background-color: $darkgray
+        transition: 1s
 
 #about
   padding: 1rem 10rem
@@ -142,6 +146,48 @@ header
       +skill-percentage(30%)
     #git-percent::before
       +skill-percentage(30%)
+
+#projects
+  height: 160vh
+  width: 100%
+  background-color: $darkgray
+  h1
+    font-size: 3rem
+    color: $offwhite
+    text-align: center
+.project-sample
+  width: 75%
+  height: 500px
+  margin: 0 auto
+  background-size: cover
+  display: flex
+  justify-content: space-between
+  border: 2px solid black
+  & + &
+    margin-top: 2rem
+    margin-bottom: -2rem
+  h2
+    background-color: $gray
+    color: $offwhite
+    font-size: 1.5rem
+    padding: 0.1rem 0.5rem
+    border-bottom: 2px solid black
+    border-right: 2px solid black
+    height: 2rem
+    margin: 0
+  a
+    align-self: flex-end
+    background-color: $gray
+    text-decoration: none
+    color: $offwhite
+    margin: 0 1rem 1rem 0
+    font-size: 1.5rem
+    padding: 0.1rem 0.5rem
+    border: 2px solid black
+    transition: 1s
+    &:hover
+      background-color: $darkgray
+      transition: 1s
 
 
 
