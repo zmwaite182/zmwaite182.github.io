@@ -83,20 +83,21 @@ header #navigation a:hover {
   font-size: 3rem;
   margin: 20px auto 30px;
 }
-#about table {
+
+table {
   background-color: #efecec;
   margin: 0 auto;
   width: 75%;
   border-spacing: 0.1rem 0.6rem;
 }
-#about table th {
+table th {
   width: 25%;
   background-color: #5c5757;
   color: #efecec;
   border: 1px solid black;
   margin-bottom: 2rem;
 }
-#about table td {
+table td {
   text-align: right;
   background-color: #d8d0d0;
   padding-right: 10px;
@@ -104,7 +105,7 @@ header #navigation a:hover {
   border: 1px solid black;
   margin-bottom: 2rem;
 }
-#about table #html-percent::before {
+table #html-percent::before {
   height: 30px;
   background-color: #363434;
   float: left;
@@ -112,7 +113,7 @@ header #navigation a:hover {
   padding: 0;
   width: 70%;
 }
-#about table #css-percent::before {
+table #css-percent::before {
   height: 30px;
   background-color: #363434;
   float: left;
@@ -120,7 +121,7 @@ header #navigation a:hover {
   padding: 0;
   width: 50%;
 }
-#about table #java-percent::before {
+table #java-percent::before {
   height: 30px;
   background-color: #363434;
   float: left;
@@ -128,7 +129,7 @@ header #navigation a:hover {
   padding: 0;
   width: 10%;
 }
-#about table #bash-percent::before {
+table #bash-percent::before {
   height: 30px;
   background-color: #363434;
   float: left;
@@ -136,7 +137,7 @@ header #navigation a:hover {
   padding: 0;
   width: 30%;
 }
-#about table #git-percent::before {
+table #git-percent::before {
   height: 30px;
   background-color: #363434;
   float: left;
@@ -149,11 +150,11 @@ header #navigation a:hover {
   height: 160vh;
   width: 100%;
   background-color: #363434;
+  text-align: center;
 }
 #projects h1 {
   font-size: 3rem;
   color: #efecec;
-  text-align: center;
 }
 
 .project-sample {
@@ -164,7 +165,6 @@ header #navigation a:hover {
   display: flex;
   justify-content: space-between;
   border: 2px solid black;
-  /*CHEVRONS*/
 }
 .project-sample + .project-sample {
   margin-top: 2rem;
@@ -196,108 +196,109 @@ header #navigation a:hover {
   transition: 1s;
 }
 
-chevron {
-  opacity: 0;
-  animation: fade-in 1.5s 2s ease-in forwards;
-  display: block;
-  position: relative;
+#contact {
+  height: 88vh;
+  padding: 1rem 10rem;
   text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 0px;
-  width: 200px;
-  margin: 0 auto;
-  bottom: -20vh;
+  background-color: #efecec;
+}
+#contact h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
-chevron::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 50%;
-  background: #efecec;
-  transform: skew(0deg, 20deg);
-}
-
-chevron::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 50%;
-  width: 50%;
-  background: #efecec;
-  transform: skew(0deg, -20deg);
-}
-
-chevron-2 {
-  display: block;
-  position: relative;
+form {
+  margin: 2rem auto 0;
   text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 0px;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 13rem;
+  background-color: #5c5757;
+  padding: 1rem 2rem 0.3rem;
+  border-radius: 10px;
+}
+
+input {
+  margin: 0.5rem 0 0;
+  background-color: #efecec;
+  padding: 0.2rem 0 0.2rem 0.7rem;
+  font-size: 0.7rem;
+  height: 1.3rem;
+}
+input [type=submit] {
+  width: 40%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  height: auto;
+}
+
+textarea {
+  margin: 0.5rem 0 0;
+  background-color: #efecec;
+  padding: 0.2rem 0 0.2rem 0.7rem;
+  font-size: 0.7rem;
+  height: 6rem;
+  padding-top: 0.5rem;
+}
+
+#anchor-container {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
   margin: 0 auto;
-  bottom: -10vh;
+  padding-top: 1rem;
+}
+#anchor-container a {
+  background-color: #efecec;
+  padding: 0.3rem;
+  border-radius: 10px;
+  height: 58px;
 }
 
-chevron-2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 50%;
-  background: #5c5757;
-  transform: skew(0deg, 20deg);
+footer {
+  /*CHEVRONS*/
 }
-
-chevron-2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 50%;
-  width: 50%;
-  background: #5c5757;
-  transform: skew(0deg, -20deg);
-}
-
-chevron-3 {
-  display: block;
-  position: relative;
+footer p {
   text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 0px;
-  width: 200px;
-  margin: 0 auto;
-  bottom: -12vh;
+  color: #efecec;
+  font-size: 0.5rem;
+  margin-top: 1.5rem;
+}
+footer img {
+  width: 58px;
+}
+footer div:nth-last-child(1) {
+  font-size: 0.3rem;
+  color: #efecec;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+footer div:nth-last-child(1) a {
+  color: #efecec;
 }
 
-chevron-3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 50%;
-  background: #5c5757;
-  transform: skew(0deg, 20deg);
-}
-
-chevron-3::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 50%;
-  width: 50%;
-  background: #5c5757;
-  transform: skew(0deg, -20deg);
-}
+/*.chevron
+ * opacity: 0
+ * animation: fade-in 1.5s 2s ease-in forwards
+ * +chevron(-20vh)
+ * &:before
+ *  +chevron-before($offwhite)
+ * &:after
+ *  +chevron-after($offwhite) */
+/*.chevron-2
+ * +chevron(-10vh)
+ * &:before
+ *  +chevron-before($gray)
+ * &:after
+ *  +chevron-after($gray) */
+/*.chevron-3
+ * +chevron(-12vh)
+ * &:before
+ *  +chevron-before($gray)
+ * &:after
+ *  +chevron-after($gray) */
 
 /*# sourceMappingURL=app.css.map */
