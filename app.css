@@ -145,14 +145,6 @@ table #sql-percent::before {
   padding: 0;
   width: 80%;
 }
-table #java-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 10%;
-}
 table #bash-percent::before {
   height: 30px;
   background-color: #363434;
