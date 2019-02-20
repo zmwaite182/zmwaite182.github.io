@@ -111,7 +111,7 @@ table #html-percent::before {
   float: left;
   content: "";
   padding: 0;
-  width: 70%;
+  width: 90%;
 }
 table #css-percent::before {
   height: 30px;
@@ -119,15 +119,31 @@ table #css-percent::before {
   float: left;
   content: "";
   padding: 0;
-  width: 50%;
+  width: 70%;
 }
-table #java-percent::before {
+table #js-percent::before {
   height: 30px;
   background-color: #363434;
   float: left;
   content: "";
   padding: 0;
-  width: 10%;
+  width: 50%;
+}
+table #py-percent::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+  width: 60%;
+}
+table #sql-percent::before {
+  height: 30px;
+  background-color: #363434;
+  float: left;
+  content: "";
+  padding: 0;
+  width: 80%;
 }
 table #bash-percent::before {
   height: 30px;
@@ -143,7 +159,7 @@ table #git-percent::before {
   float: left;
   content: "";
   padding: 0;
-  width: 30%;
+  width: 50%;
 }
 
 #projects {
