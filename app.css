@@ -193,6 +193,12 @@ table #git-percent::before {
   font-size: 3rem;
   color: #efecec;
 }
+#projects #slice-project {
+  background-image: url("./images/slice.png");
+}
+#projects #todo-project {
+  background-image: url("./images/todo.png");
+}
 
 .project-sample {
   width: 75%;
@@ -262,13 +268,15 @@ input {
   font-size: 0.7rem;
   height: 1.3rem;
 }
-input [type=submit] {
+
+[type=submit] {
   width: 40%;
   margin: 0.5rem auto;
   padding: 0.5rem;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   height: auto;
+  color: #777;
 }
 
 textarea {
