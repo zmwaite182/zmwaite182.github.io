@@ -24,17 +24,15 @@ $font-size: 24px
 
 //MIXINS
 
-=chevron($location)
+=chevron($top-margin, $bottom-margin)
   display: block
   position: relative
   text-align: center
   padding: 12px
-  margin-bottom: 6px
   height: 0px
   width: 200px
-  margin: 0 auto
-  bottom: $location
-=chevron-before($color)
+  margin: $top-margin auto $bottom-margin
+=chevron-before($color, $direction)
   content: ''
   position: absolute
   top: 0
@@ -42,8 +40,8 @@ $font-size: 24px
   height: 50%
   width: 50%
   background: $color
-  transform: skew(0deg, 20deg)
-=chevron-after($color)
+  transform: if($direction == 'down', skew(0deg, 20deg), skew(0deg, -20deg))
+=chevron-after($color, $direction)
   content: ''
   position: absolute
   top: 0
@@ -51,7 +49,7 @@ $font-size: 24px
   height: 50%
   width: 50%
   background: $color
-  transform: skew(0deg, -20deg)
+  transform: if($direction == 'down', skew(0deg, -20deg), skew(0deg, 20deg))
 
 =skill-percentage($width)
   height: 30px
@@ -85,8 +83,10 @@ header
   justify-content: center
   text-align: center
   color: $offwhite
+  min-height: 512px
   h1
     font-size: 3rem
+    z-index: -1
   h1, h2
     opacity: 0
     animation: fade-in 2s 1s ease-in forwards
@@ -123,7 +123,6 @@ header
 
 #about
   padding: 1rem 10rem
-  height: 105vh
   background-color: $offwhite
   img
     margin: 0 auto
@@ -171,7 +170,6 @@ table
     +skill-percentage(50%)
 
 #projects
-  height: 160vh
   width: 100%
   background-color: $darkgray
   text-align: center
@@ -213,7 +211,6 @@ table
       transition: 1s
 
 #contact
-  height: 88vh
   padding: 1rem 10rem
   text-align: center
   background-color: $offwhite
@@ -284,20 +281,27 @@ footer
 .chevron
   opacity: 0
   animation: fade-in 1.5s 2s ease-in forwards
-  +chevron(-20vh)
+  bottom: -20vh
+  +chevron(0, 100px)
   &:before
-    +chevron-before($offwhite)
+    +chevron-before($offwhite, 'down')
   &:after
-    +chevron-after($offwhite)
+    +chevron-after($offwhite, 'down')
 .chevron-2
-  +chevron(-10vh)
+  +chevron(100px, 30px)
   &:before
-    +chevron-before($gray)
+    +chevron-before($gray, 'down')
   &:after
-    +chevron-after($gray)
+    +chevron-after($gray, 'down')
 .chevron-3
-  +chevron(-12vh)
+  +chevron(150px, 50px)
   &:before
-    +chevron-before($gray)
+    +chevron-before($offwhite, 'down')
   &:after
-    +chevron-after($gray)
+    +chevron-after($offwhite, 'down')
+.chevron-4
+  +chevron(100px, 50px)
+  &:before
+    +chevron-before($gray, 'up')
+  &:after
+    +chevron-after($gray, 'up')
