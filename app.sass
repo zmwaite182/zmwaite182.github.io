@@ -1,4 +1,5 @@
 //VARIABLES
+
 $darkgray: #363434
 $gray: #5c5757
 $offwhite: #efecec
@@ -6,10 +7,23 @@ $offwhite: #efecec
 $font-stack: 'Raleway', sans-serif
 $font-size: 24px
 
+//KEYFRAMES
 
+@keyframes fade-in
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes header-drop-down
+  from
+    top: -50px
+  to
+    top: -10px
 
 
 //MIXINS
+
 =chevron($location)
   display: block
   position: relative
@@ -84,7 +98,8 @@ header
     display: inline-block
     padding: 0 0.5rem
     position: relative
-    top: -8px
+    top: -50px
+    animation: header-drop-down 2s ease 3s forwards
   a
     color: $offwhite
     text-decoration: none
@@ -260,9 +275,10 @@ footer
     a
       color: $offwhite
 
-  /*CHEVRONS*/
 
-/*.chevron
+//CHEVRONS
+
+.chevron
   opacity: 0
   animation: fade-in 1.5s 2s ease-in forwards
   +chevron(-20vh)
@@ -270,13 +286,13 @@ footer
     +chevron-before($offwhite)
   &:after
     +chevron-after($offwhite)
-/*.chevron-2
+.chevron-2
   +chevron(-10vh)
   &:before
     +chevron-before($gray)
   &:after
     +chevron-after($gray)
-/*.chevron-3
+.chevron-3
   +chevron(-12vh)
   &:before
     +chevron-before($gray)

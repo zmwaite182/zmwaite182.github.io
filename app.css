@@ -1,3 +1,19 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes header-drop-down {
+  from {
+    top: -50px;
+  }
+  to {
+    top: -10px;
+  }
+}
 html {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
@@ -38,7 +54,8 @@ header .header-content {
   display: inline-block;
   padding: 0 0.5rem;
   position: relative;
-  top: -8px;
+  top: -50px;
+  animation: header-drop-down 2s ease 3s forwards;
 }
 header a {
   color: #efecec;
@@ -274,9 +291,6 @@ textarea {
   height: 58px;
 }
 
-footer {
-  /*CHEVRONS*/
-}
 footer p {
   text-align: center;
   color: #efecec;
@@ -296,25 +310,102 @@ footer div:nth-last-child(1) a {
   color: #efecec;
 }
 
-/*.chevron
- * opacity: 0
- * animation: fade-in 1.5s 2s ease-in forwards
- * +chevron(-20vh)
- * &:before
- *  +chevron-before($offwhite)
- * &:after
- *  +chevron-after($offwhite) */
-/*.chevron-2
- * +chevron(-10vh)
- * &:before
- *  +chevron-before($gray)
- * &:after
- *  +chevron-after($gray) */
-/*.chevron-3
- * +chevron(-12vh)
- * &:before
- *  +chevron-before($gray)
- * &:after
- *  +chevron-after($gray) */
+.chevron {
+  opacity: 0;
+  animation: fade-in 1.5s 2s ease-in forwards;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -20vh;
+}
+.chevron:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, 20deg);
+}
+.chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-2 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -10vh;
+}
+.chevron-2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
+}
+.chevron-2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-3 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: -12vh;
+}
+.chevron-3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
+}
+.chevron-3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
 
 /*# sourceMappingURL=app.css.map */
