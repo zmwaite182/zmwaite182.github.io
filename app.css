@@ -38,9 +38,11 @@ header {
   justify-content: center;
   text-align: center;
   color: #efecec;
+  min-height: 512px;
 }
 #home h1 {
   font-size: 3rem;
+  z-index: -1;
 }
 #home h1, #home h2 {
   opacity: 0;
@@ -86,7 +88,6 @@ header #navigation a:hover {
 
 #about {
   padding: 1rem 10rem;
-  height: 105vh;
   background-color: #efecec;
 }
 #about img {
@@ -184,7 +185,6 @@ table #git-percent::before {
 }
 
 #projects {
-  height: 160vh;
   width: 100%;
   background-color: #363434;
   text-align: center;
@@ -234,7 +234,6 @@ table #git-percent::before {
 }
 
 #contact {
-  height: 88vh;
   padding: 1rem 10rem;
   text-align: center;
   background-color: #efecec;
@@ -317,15 +316,14 @@ footer div:nth-last-child(1) a {
 .chevron {
   opacity: 0;
   animation: fade-in 1.5s 2s ease-in forwards;
+  bottom: -20vh;
   display: block;
   position: relative;
   text-align: center;
   padding: 12px;
-  margin-bottom: 6px;
   height: 0px;
   width: 200px;
-  margin: 0 auto;
-  bottom: -20vh;
+  margin: 0 auto 100px;
 }
 .chevron:before {
   content: "";
@@ -353,11 +351,9 @@ footer div:nth-last-child(1) a {
   position: relative;
   text-align: center;
   padding: 12px;
-  margin-bottom: 6px;
   height: 0px;
   width: 200px;
-  margin: 0 auto;
-  bottom: -10vh;
+  margin: 100px auto 30px;
 }
 .chevron-2:before {
   content: "";
@@ -385,11 +381,9 @@ footer div:nth-last-child(1) a {
   position: relative;
   text-align: center;
   padding: 12px;
-  margin-bottom: 6px;
   height: 0px;
   width: 200px;
-  margin: 0 auto;
-  bottom: -12vh;
+  margin: 150px auto 50px;
 }
 .chevron-3:before {
   content: "";
@@ -398,7 +392,7 @@ footer div:nth-last-child(1) a {
   left: 0;
   height: 50%;
   width: 50%;
-  background: #5c5757;
+  background: #efecec;
   transform: skew(0deg, 20deg);
 }
 .chevron-3:after {
@@ -408,8 +402,38 @@ footer div:nth-last-child(1) a {
   right: 0;
   height: 50%;
   width: 50%;
+  background: #efecec;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-4 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  height: 0px;
+  width: 200px;
+  margin: 100px auto 50px;
+}
+.chevron-4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
   background: #5c5757;
   transform: skew(0deg, -20deg);
+}
+.chevron-4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
 }
 
 /*# sourceMappingURL=app.css.map */
