@@ -42,6 +42,10 @@ header {
 #home h1 {
   font-size: 3rem;
 }
+#home h1, #home h2 {
+  opacity: 0;
+  animation: fade-in 2s 1s ease-in forwards;
+}
 
 header {
   display: flex;
