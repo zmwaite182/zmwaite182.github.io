@@ -248,6 +248,11 @@ table #git-percent::before {
   font-size: 3rem;
   margin-top: 1rem;
 }
+#contact .download {
+  color: #5c5757;
+  font-size: 0.6rem;
+  margin-left: 1rem;
+}
 
 form {
   margin: 2rem auto 0;
