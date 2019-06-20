@@ -253,44 +253,10 @@ table #git-percent::before {
   font-size: 0.6rem;
   margin-left: 1rem;
 }
-
-form {
-  margin: 2rem auto 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  height: 13rem;
-  background-color: #5c5757;
-  padding: 1rem 2rem 0.3rem;
-  border-radius: 10px;
-}
-
-input {
-  margin: 0.5rem 0 0;
-  background-color: #efecec;
-  padding: 0.2rem 0 0.2rem 0.7rem;
-  font-size: 0.7rem;
-  height: 1.3rem;
-}
-
-[type=submit] {
-  width: 40%;
-  margin: 0.5rem auto;
-  padding: 0.5rem;
-  border-radius: 10px;
-  font-size: 0.75rem;
-  height: auto;
-  color: #777;
-}
-
-textarea {
-  margin: 0.5rem 0 0;
-  background-color: #efecec;
-  padding: 0.2rem 0 0.2rem 0.7rem;
-  font-size: 0.7rem;
-  height: 6rem;
-  padding-top: 0.5rem;
+#contact p + p {
+  font-weight: bold;
+  margin-top: 1rem;
+  text-decoration: overline;
 }
 
 #anchor-container {
