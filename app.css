@@ -149,7 +149,7 @@ table #js-percent::before {
   float: left;
   content: "";
   padding: 0;
-  width: 50%;
+  width: 60%;
 }
 table #py-percent::before {
   height: 30px;
@@ -157,7 +157,7 @@ table #py-percent::before {
   float: left;
   content: "";
   padding: 0;
-  width: 60%;
+  width: 70%;
 }
 table #sql-percent::before {
   height: 30px;
@@ -181,7 +181,7 @@ table #git-percent::before {
   float: left;
   content: "";
   padding: 0;
-  width: 50%;
+  width: 60%;
 }
 
 #projects {
