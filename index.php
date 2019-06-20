@@ -1,3 +1,19 @@
+<?php
+  if($_POST["submit"]) {
+    $recipient="zanewaite99@gmail.com";
+    $subject="Email from Portfolio Site"
+    $name=$_POST["name"];
+    $email=$_POST["email"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $name\nEmail: $email\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $name <$email>");
+
+    $sent ="<p>Thank you! Your email has been sent.</p>";
+
+  }
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -80,9 +96,10 @@
 
     <section id="contact">
       <h1>Contact</h1>
-      <p>I'm always looking for ways to learn and new projects to experiment with. If you have any projects, feel free to contact me about them here.</p>
+      <p>I&apos;m always looking for ways to learn and new projects to experiment with. If you have any projects, feel free to contact me about them here.</p>
       <a href="resume.docx" download="zwaite_resume.docx" class="download">Download resume</a>
-      <form>
+      <?=$sent ?>
+      <form method="post" action="index.php">
         <input placeholder="Name" type="text" name="name" required>
         <input placeholder="Email Address" type="email" name="email" required>
         <textarea placeholder="Brief Message" name="message" maxlength="500" required></textarea>
