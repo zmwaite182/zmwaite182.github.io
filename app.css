@@ -17,6 +17,7 @@
 html {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -296,7 +297,7 @@ textarea {
 #anchor-container {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 10%;
   margin: 0 auto;
   padding-top: 1rem;
 }
@@ -304,7 +305,7 @@ textarea {
   background-color: #efecec;
   padding: 0.3rem;
   border-radius: 10px;
-  height: 58px;
+  height: 32px;
 }
 
 footer p {
@@ -314,7 +315,7 @@ footer p {
   margin-top: 1.5rem;
 }
 footer img {
-  width: 58px;
+  width: 32px;
 }
 footer div:nth-last-child(1) {
   font-size: 0.3rem;
