@@ -17,7 +17,7 @@ $font-size: 24px
 
 @keyframes header-drop-down
   from
-    top: -50px
+    top: -70px
   to
     top: -10px
 
@@ -100,18 +100,17 @@ header
     color: $offwhite
     border-bottom: 2px solid $offwhite
     display: inline-block
+    font-size: 1.4rem
     padding: 0 0.5rem
     position: relative
-    top: -50px
+    top: -70px
     animation: header-drop-down 2s ease 3s forwards
   a
     color: $offwhite
     text-decoration: none
   #header-title
-    font-size: 1.4rem
     border-right: 2px solid $offwhite
   #navigation
-    width: 446px
     padding: 0
     border-left: 2px solid $offwhite
     a
@@ -125,50 +124,25 @@ header
 #about
   padding: 1rem 10rem
   background-color: $offwhite
-  img
-    margin: 0 auto
-    display: block
-    border-radius: 50%
-    margin-bottom: 1.7rem
-    height: 10rem
-  p
-    text-align: center
+  height: 100vh
+  .flex-container
+    display: flex
+    p
+      font-size: 1.4rem
+      font-family: $font-stack
+      text-align: right
+      display: inline-block
+      width: 20rem
+      margin: auto
+    img
+      margin: 1.7rem auto
+      display: inline-block
+      height: 20rem
   h1
     text-align: center
     font-size: 3rem
     margin: 20px auto 30px
-table
-  background-color: $offwhite
-  margin: 0 auto
-  width: 75%
-  border-spacing: 0.1rem 0.6rem
-  th
-    width: 25%
-    background-color: $gray
-    color: $offwhite
-    border: 1px solid black
-    margin-bottom: 2rem
-  td
-    text-align: right
-    background-color: darken($offwhite, 10%)
-    padding-right: 10px
-    font-size: 0.8rem
-    border: 1px solid black
-    margin-bottom: 2rem
-  #html-percent::before
-    +skill-percentage(90%)
-  #css-percent::before
-    +skill-percentage(70%)
-  #js-percent::before
-    +skill-percentage(50%)
-  #py-percent::before
-    +skill-percentage(60%)
-  #sql-percent::before
-    +skill-percentage(80%)
-  #bash-percent::before
-    +skill-percentage(30%)
-  #git-percent::before
-    +skill-percentage(50%)
+
 
 #projects
   width: 100%
@@ -225,7 +199,7 @@ table
   .download
     color: $gray
     font-size: 0.6rem
-    margin-left: 1rem
+    margin: 0
 form
   margin: 2rem auto 0
   text-align: center

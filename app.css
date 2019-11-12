@@ -8,7 +8,7 @@
 }
 @keyframes header-drop-down {
   from {
-    top: -50px;
+    top: -70px;
   }
   to {
     top: -10px;
@@ -59,9 +59,10 @@ header .header-content {
   color: #efecec;
   border-bottom: 2px solid #efecec;
   display: inline-block;
+  font-size: 1.4rem;
   padding: 0 0.5rem;
   position: relative;
-  top: -50px;
+  top: -70px;
   animation: header-drop-down 2s ease 3s forwards;
 }
 header a {
@@ -69,11 +70,9 @@ header a {
   text-decoration: none;
 }
 header #header-title {
-  font-size: 1.4rem;
   border-right: 2px solid #efecec;
 }
 header #navigation {
-  width: 446px;
   padding: 0;
   border-left: 2px solid #efecec;
 }
@@ -90,99 +89,28 @@ header #navigation a:hover {
 #about {
   padding: 1rem 10rem;
   background-color: #efecec;
+  height: 100vh;
 }
-#about img {
-  margin: 0 auto;
-  display: block;
-  border-radius: 50%;
-  margin-bottom: 1.7rem;
-  height: 10rem;
+#about .flex-container {
+  display: flex;
 }
-#about p {
-  text-align: center;
+#about .flex-container p {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+  display: inline-block;
+  width: 20rem;
+  margin: auto;
+}
+#about .flex-container img {
+  margin: 1.7rem auto;
+  display: inline-block;
+  height: 20rem;
 }
 #about h1 {
   text-align: center;
   font-size: 3rem;
   margin: 20px auto 30px;
-}
-
-table {
-  background-color: #efecec;
-  margin: 0 auto;
-  width: 75%;
-  border-spacing: 0.1rem 0.6rem;
-}
-table th {
-  width: 25%;
-  background-color: #5c5757;
-  color: #efecec;
-  border: 1px solid black;
-  margin-bottom: 2rem;
-}
-table td {
-  text-align: right;
-  background-color: #d8d0d0;
-  padding-right: 10px;
-  font-size: 0.8rem;
-  border: 1px solid black;
-  margin-bottom: 2rem;
-}
-table #html-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 90%;
-}
-table #css-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 70%;
-}
-table #js-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 50%;
-}
-table #py-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 60%;
-}
-table #sql-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 80%;
-}
-table #bash-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 30%;
-}
-table #git-percent::before {
-  height: 30px;
-  background-color: #363434;
-  float: left;
-  content: "";
-  padding: 0;
-  width: 50%;
 }
 
 #projects {
@@ -252,7 +180,7 @@ table #git-percent::before {
 #contact .download {
   color: #5c5757;
   font-size: 0.6rem;
-  margin-left: 1rem;
+  margin: 0;
 }
 
 form {
