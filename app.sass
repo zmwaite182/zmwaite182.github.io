@@ -76,6 +76,7 @@ header
   justify-content: space-between
   position: fixed
   width: 100%
+  z-index: 1
 
 #home
   height: 100vh
@@ -87,10 +88,10 @@ header
   min-height: 512px
   h1
     font-size: 4rem
-    z-index: -1
   h1, h2
     opacity: 0
     animation: fade-in 2s 1s ease-in forwards
+    z-index: -1
 
 header
   display: flex
@@ -151,43 +152,46 @@ header
   h1
     font-size: 3rem
     color: $offwhite
-  #slice-project
-    background-image: url("./images/slice.png")
-  #todo-project
-    background-image: url("./images/todo.png")
 .project-sample
-  width: 75%
-  height: 500px
-  margin: 0 auto
+  width: min-content
+  margin: 0 auto 32px
   background-size: cover
-  display: flex
-  justify-content: space-between
   border: 2px solid black
-  & + &
-    margin-top: 2rem
-    margin-bottom: -2rem
-  h2
+  position: relative
+  img
+    display: block
+    width: 1000px
+    height: auto  
+  .overlay
     background-color: $gray
+    opacity: 0
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    -webkit-transition: opacity 1s
+    transition: opacity 1s
+  &:hover .overlay
+    opacity: 1
+    -webkit-transition: opacity 1s
+    transition: opacity 1s
+  h2, p, a
     color: $offwhite
     font-size: 1.5rem
-    padding: 0.1rem 0.5rem
-    border-bottom: 2px solid black
-    border-right: 2px solid black
-    height: 2rem
-    margin: 0
+    text-align: center   
   a
-    align-self: flex-end
     background-color: $gray
     text-decoration: none
-    color: $offwhite
-    margin: 0 1rem 1rem 0
-    font-size: 1.5rem
-    padding: 0.1rem 0.5rem
-    border: 2px solid black
-    transition: 1s
+    border: 2px solid $offwhite
+    padding: 0.2rem
+    transition: background-color 1s
     &:hover
       background-color: $darkgray
-      transition: 1s
+      transition: background-color 1s
 
 #contact
   padding: 1rem 10rem
@@ -196,53 +200,27 @@ header
   h1
     font-size: 3rem
     margin-top: 1rem
-  .download
-    color: $gray
-    font-size: 0.6rem
-    margin: 0
-form
-  margin: 2rem auto 0
-  text-align: center
-  display: flex
-  flex-direction: column
-  width: 75%
-  height: 13rem
-  background-color: $gray
-  padding: 1rem 2rem 0.3rem
-  border-radius: 10px
-input
-  margin: 0.5rem 0 0
-  background-color: $offwhite
-  padding: 0.2rem 0 0.2rem 0.7rem
-  font-size: 0.7rem
-  height: 1.3rem
-[type=submit]
-  width: 40%
-  margin: 0.5rem auto
-  padding: 0.5rem
-  border-radius: 10px
-  font-size: 0.75rem
-  height: auto
-  color: #777
-textarea
-  margin: 0.5rem 0 0
-  background-color: $offwhite
-  padding: 0.2rem 0 0.2rem 0.7rem
-  font-size: 0.7rem
-  height: 6rem
-  padding-top: 0.5rem
-
-#anchor-container
-  display: flex
-  justify-content: space-between
-  width: 10%
+ul
+  list-style-type: none
+  width: 50%
   margin: 0 auto
-  padding-top: 1rem
+ul li 
+  text-align: left
+  margin-bottom: 1rem
+  img
+    background-color: $darkgray
+    padding: 0.2rem
+    border-radius: 10%
+    vertical-align: middle
+  span
+    margin-left: 1rem
   a
-    background-color: $offwhite
-    padding: 0.3rem
-    border-radius: 10px
-    height: 32px
+    text-decoration: none
+    color: black
+    span
+      text-decoration: underline
+
+
 footer
   p
     text-align: center
