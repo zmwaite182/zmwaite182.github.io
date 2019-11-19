@@ -136,9 +136,18 @@ header
       width: 20rem
       margin: auto
     img
+      border-radius: 10%
       margin: 1.7rem auto
       display: inline-block
       height: 20rem
+      -webkit-filter: grayscale(100%)
+      filter: grayscale(100%)
+      transition: 0.5s
+      &:hover
+        border-radius: 50%
+        -webkit-filter: none
+        filter: none
+        transition: 0.5s
   h1
     text-align: center
     font-size: 3rem
@@ -207,10 +216,15 @@ ul
 ul li 
   text-align: left
   margin-bottom: 1rem
+  .link-img
+    transition: 0.25s
+    &:hover
+      box-shadow: 5px 5px 10px
+      transition: 0.25s
   img
-    background-color: $darkgray
-    padding: 0.2rem
+    padding: 0.3rem
     border-radius: 10%
+    border: 3px solid $darkgray
     vertical-align: middle
   span
     margin-left: 1rem
@@ -219,18 +233,19 @@ ul li
     color: black
     span
       text-decoration: underline
+      &:hover
+        font-weight: bold
 
 
 footer
   p
     text-align: center
     color: $offwhite
-    font-size: 0.5rem
     margin-top: 1.5rem
   img
     width: 32px
   div:nth-last-child(1)
-    font-size: 0.3rem
+    font-size: 0.5rem
     color: $offwhite
     text-align: center
     margin-bottom: 1rem

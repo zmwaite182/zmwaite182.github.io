@@ -104,9 +104,19 @@ header #navigation a:hover {
   margin: auto;
 }
 #about .flex-container img {
+  border-radius: 10%;
   margin: 1.7rem auto;
   display: inline-block;
   height: 20rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+#about .flex-container img:hover {
+  border-radius: 50%;
+  -webkit-filter: none;
+  filter: none;
+  transition: 0.5s;
 }
 #about h1 {
   text-align: center;
@@ -192,10 +202,17 @@ ul li {
   text-align: left;
   margin-bottom: 1rem;
 }
+ul li .link-img {
+  transition: 0.25s;
+}
+ul li .link-img:hover {
+  box-shadow: 5px 5px 10px;
+  transition: 0.25s;
+}
 ul li img {
-  background-color: #363434;
-  padding: 0.2rem;
+  padding: 0.3rem;
   border-radius: 10%;
+  border: 3px solid #363434;
   vertical-align: middle;
 }
 ul li span {
@@ -208,18 +225,20 @@ ul li a {
 ul li a span {
   text-decoration: underline;
 }
+ul li a span:hover {
+  font-weight: bold;
+}
 
 footer p {
   text-align: center;
   color: #efecec;
-  font-size: 0.5rem;
   margin-top: 1.5rem;
 }
 footer img {
   width: 32px;
 }
 footer div:nth-last-child(1) {
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   color: #efecec;
   text-align: center;
   margin-bottom: 1rem;
