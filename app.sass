@@ -17,7 +17,7 @@ $font-size: 24px
 
 @keyframes header-drop-down
   from
-    top: -50px
+    top: -70px
   to
     top: -10px
 
@@ -65,6 +65,7 @@ $font-size: 24px
 html
   font-family: $font-stack
   font-size: $font-size
+  scroll-behavior: smooth
 
 body
   background-color: $darkgray
@@ -75,6 +76,7 @@ header
   justify-content: space-between
   position: fixed
   width: 100%
+  z-index: 1
 
 #home
   height: 100vh
@@ -85,11 +87,11 @@ header
   color: $offwhite
   min-height: 512px
   h1
-    font-size: 3rem
-    z-index: -1
+    font-size: 4rem
   h1, h2
     opacity: 0
     animation: fade-in 2s 1s ease-in forwards
+    z-index: -1
 
 header
   display: flex
@@ -99,18 +101,17 @@ header
     color: $offwhite
     border-bottom: 2px solid $offwhite
     display: inline-block
+    font-size: 1.4rem
     padding: 0 0.5rem
     position: relative
-    top: -50px
+    top: -70px
     animation: header-drop-down 2s ease 3s forwards
   a
     color: $offwhite
     text-decoration: none
   #header-title
-    font-size: 1.4rem
     border-right: 2px solid $offwhite
   #navigation
-    width: 446px
     padding: 0
     border-left: 2px solid $offwhite
     a
@@ -124,18 +125,34 @@ header
 #about
   padding: 1rem 10rem
   background-color: $offwhite
-  img
-    margin: 0 auto
-    display: block
-    border-radius: 50%
-    margin-bottom: 1.7rem
-    height: 10rem
-  p
-    text-align: center
+  height: 100vh
+  .flex-container
+    display: flex
+    p
+      font-size: 1.4rem
+      font-family: $font-stack
+      text-align: right
+      display: inline-block
+      width: 20rem
+      margin: auto
+    img
+      border-radius: 10%
+      margin: 1.7rem auto
+      display: inline-block
+      height: 20rem
+      -webkit-filter: grayscale(100%)
+      filter: grayscale(100%)
+      transition: 0.5s
+      &:hover
+        border-radius: 50%
+        -webkit-filter: none
+        filter: none
+        transition: 0.5s
   h1
     text-align: center
     font-size: 3rem
     margin: 20px auto 30px
+<<<<<<< HEAD
 table
   background-color: $offwhite
   margin: 0 auto
@@ -168,6 +185,9 @@ table
     +skill-percentage(30%)
   #git-percent::before
     +skill-percentage(60%)
+=======
+
+>>>>>>> small-changes
 
 #projects
   width: 100%
@@ -176,43 +196,46 @@ table
   h1
     font-size: 3rem
     color: $offwhite
-  #slice-project
-    background-image: url("./images/slice.png")
-  #todo-project
-    background-image: url("./images/todo.png")
 .project-sample
-  width: 75%
-  height: 500px
-  margin: 0 auto
+  width: min-content
+  margin: 0 auto 32px
   background-size: cover
-  display: flex
-  justify-content: space-between
   border: 2px solid black
-  & + &
-    margin-top: 2rem
-    margin-bottom: -2rem
-  h2
+  position: relative
+  img
+    display: block
+    width: 1000px
+    height: auto  
+  .overlay
     background-color: $gray
+    opacity: 0
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    -webkit-transition: opacity 1s
+    transition: opacity 1s
+  &:hover .overlay
+    opacity: 1
+    -webkit-transition: opacity 1s
+    transition: opacity 1s
+  h2, p, a
     color: $offwhite
     font-size: 1.5rem
-    padding: 0.1rem 0.5rem
-    border-bottom: 2px solid black
-    border-right: 2px solid black
-    height: 2rem
-    margin: 0
+    text-align: center   
   a
-    align-self: flex-end
     background-color: $gray
     text-decoration: none
-    color: $offwhite
-    margin: 0 1rem 1rem 0
-    font-size: 1.5rem
-    padding: 0.1rem 0.5rem
-    border: 2px solid black
-    transition: 1s
+    border: 2px solid $offwhite
+    padding: 0.2rem
+    transition: background-color 1s
     &:hover
       background-color: $darkgray
-      transition: 1s
+      transition: background-color 1s
 
 #contact
   padding: 1rem 10rem
@@ -221,36 +244,43 @@ table
   h1
     font-size: 3rem
     margin-top: 1rem
-  .download
-    color: $gray
-    font-size: 0.6rem
-    margin-left: 1rem
-  p + p
-    font-weight: bold
-    margin-top: 1rem
-    text-decoration: overline
-
-#anchor-container
-  display: flex
-  justify-content: space-between
-  width: 25%
+ul
+  list-style-type: none
+  width: 50%
   margin: 0 auto
-  padding-top: 1rem
-  a
-    background-color: $offwhite
+ul li 
+  text-align: left
+  margin-bottom: 1rem
+  .link-img
+    transition: 0.25s
+    &:hover
+      box-shadow: 5px 5px 10px
+      transition: 0.25s
+  img
     padding: 0.3rem
-    border-radius: 10px
-    height: 58px
+    border-radius: 10%
+    border: 3px solid $darkgray
+    vertical-align: middle
+  span
+    margin-left: 1rem
+  a
+    text-decoration: none
+    color: black
+    span
+      text-decoration: underline
+      &:hover
+        font-weight: bold
+
+
 footer
   p
     text-align: center
     color: $offwhite
-    font-size: 0.5rem
     margin-top: 1.5rem
   img
-    width: 58px
+    width: 32px
   div:nth-last-child(1)
-    font-size: 0.3rem
+    font-size: 0.5rem
     color: $offwhite
     text-align: center
     margin-bottom: 1rem
