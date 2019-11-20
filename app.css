@@ -1,0 +1,373 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes header-drop-down {
+  from {
+    top: -70px;
+  }
+  to {
+    top: -10px;
+  }
+}
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #363434;
+  margin: 8px 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #efecec;
+  min-height: 512px;
+}
+#home h1 {
+  font-size: 4rem;
+}
+#home h1, #home h2 {
+  opacity: 0;
+  animation: fade-in 2s 1s ease-in forwards;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-content {
+  background-color: #5c5757;
+  color: #efecec;
+  border-bottom: 2px solid #efecec;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 0 0.5rem;
+  position: relative;
+  top: -70px;
+  animation: header-drop-down 2s ease 3s forwards;
+}
+header a {
+  color: #efecec;
+  text-decoration: none;
+}
+header #header-title {
+  border-right: 2px solid #efecec;
+}
+header #navigation {
+  padding: 0;
+  border-left: 2px solid #efecec;
+}
+header #navigation a {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  transition: 1s;
+}
+header #navigation a:hover {
+  background-color: #363434;
+  transition: 1s;
+}
+
+#about {
+  padding: 1rem 10rem;
+  background-color: #efecec;
+  height: 100vh;
+}
+#about .flex-container {
+  display: flex;
+}
+#about .flex-container p {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+  display: inline-block;
+  width: 20rem;
+  margin: auto;
+}
+#about .flex-container img {
+  border-radius: 10%;
+  margin: 1.7rem auto;
+  display: inline-block;
+  height: 20rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+#about .flex-container img:hover {
+  border-radius: 50%;
+  -webkit-filter: none;
+  filter: none;
+  transition: 0.5s;
+}
+#about h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px auto 30px;
+}
+
+#projects {
+  width: 100%;
+  background-color: #363434;
+  text-align: center;
+}
+#projects h1 {
+  font-size: 3rem;
+  color: #efecec;
+}
+
+.project-sample {
+  width: min-content;
+  margin: 0 auto 32px;
+  background-size: cover;
+  border: 2px solid black;
+  position: relative;
+}
+.project-sample img {
+  display: block;
+  width: 1000px;
+  height: auto;
+}
+.project-sample .overlay {
+  background-color: #5c5757;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.project-sample:hover .overlay {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.project-sample h2, .project-sample p, .project-sample a {
+  color: #efecec;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.project-sample a {
+  background-color: #5c5757;
+  text-decoration: none;
+  border: 2px solid #efecec;
+  padding: 0.2rem;
+  transition: background-color 1s;
+}
+.project-sample a:hover {
+  background-color: #363434;
+  transition: background-color 1s;
+}
+
+#contact {
+  padding: 1rem 10rem;
+  text-align: center;
+  background-color: #efecec;
+}
+#contact h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul li {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+ul li .link-img {
+  transition: 0.25s;
+}
+ul li .link-img:hover {
+  box-shadow: 5px 5px 10px;
+  transition: 0.25s;
+}
+ul li img {
+  padding: 0.3rem;
+  border-radius: 10%;
+  border: 3px solid #363434;
+  vertical-align: middle;
+}
+ul li span {
+  margin-left: 1rem;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+ul li a span {
+  text-decoration: underline;
+}
+ul li a span:hover {
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  color: #efecec;
+  margin-top: 1.5rem;
+}
+footer img {
+  width: 32px;
+}
+footer div:nth-last-child(1) {
+  font-size: 0.5rem;
+  color: #efecec;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+footer div:nth-last-child(1) a {
+  color: #efecec;
+}
+
+.chevron {
+  opacity: 0;
+  animation: fade-in 1.5s 2s ease-in forwards;
+  bottom: -20vh;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  height: 0px;
+  width: 200px;
+  margin: 0 auto 100px;
+}
+.chevron:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, 20deg);
+}
+.chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-2 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  height: 0px;
+  width: 200px;
+  margin: 100px auto 30px;
+}
+.chevron-2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
+}
+.chevron-2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-3 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  height: 0px;
+  width: 200px;
+  margin: 150px auto 50px;
+}
+.chevron-3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, 20deg);
+}
+.chevron-3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #efecec;
+  transform: skew(0deg, -20deg);
+}
+
+.chevron-4 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  height: 0px;
+  width: 200px;
+  margin: 100px auto 50px;
+}
+.chevron-4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, -20deg);
+}
+.chevron-4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: #5c5757;
+  transform: skew(0deg, 20deg);
+}
+
+/*# sourceMappingURL=app.css.map */
