@@ -1,15 +1,11 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>&lt;zane-waite&gt;</title>
   <link rel="stylesheet" href="app.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
-
 <body>
-
   <header>
     <a href="#" class="header-content" id="header-title">&lt;zane-waite&gt;</a>
     <nav class="header-content" id="navigation">
@@ -19,12 +15,10 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-
   <main>
-
     <section id="home">
-      <h1>Zane Waite</h1>
       <h2>Junior Web Developer</h2>
+      <h1>Zane Waite</h1>
       <a href="#about" class="chevron"></a>
     </section>
 
@@ -66,6 +60,10 @@
         <li>
           <img src="images/email-logo.png" alt="Email icon">
           <span>zanewaite99@gmail.com</span>
+          <form action="process.php" method="POST">
+            <input type="text" name="email">
+            <input type="submit" name="submit">
+          </form>
         </li>
         <li>
           <a href="z_waite_resume.pdf" download="zwaite_resume.pdf">
@@ -88,15 +86,11 @@
       </ul>
       <a href="#home" class="chevron-4"></a>
     </section>
-
   </main>
-
   <footer>
     <p>Zane Waite &copy; 2019</p>
     <div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
         title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
-
 </body>
-
 </html>
